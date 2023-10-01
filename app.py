@@ -1,10 +1,10 @@
 import streamlit as st 
 import tiktoken 
 
-GPT_35_TURBO_PROMPT_COST = 0.0015 
-GPT_35_TURBO_COMPLETIONS_COST = 0.002 
-GPT4_PROMPT_COST = 0.03 
-GPT4_COMPLETIONS_COST = 0.06
+GPT_35_TURBO_PROMPT_COST = 0.0015/1000 
+GPT_35_TURBO_COMPLETIONS_COST = 0.002/1000
+GPT4_PROMPT_COST = 0.03/1000
+GPT4_COMPLETIONS_COST = 0.06/1000
 
 def num_tokens_from_string(string: str, encoding_name: str) -> int:
     encoding = tiktoken.get_encoding(encoding_name)
