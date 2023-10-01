@@ -1,0 +1,18 @@
+Taker:
+
+8 Simulatios (Can we have expander?)
+
+3 with Azure OpenAI 
+2 with GCP 
+2 with AWS (Claude, Titan, etc)
+1 with OpenAI
+
+Shaper:
+8 Simulations (Can we have expander?)
+
+3 with Pinecone 
+1 with Weaviate 
+2 with Azure Services (1 with ADA and 1 with both ADA and cognitive services)
+1 with Matching Engine (By GCP)
+1 with AWS Services (Open Search Services)
+
