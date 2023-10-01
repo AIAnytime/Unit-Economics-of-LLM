@@ -5,16 +5,6 @@ GPT_35_TURBO_PROMPT_COST = 0.0015
 GPT_35_TURBO_COMPLETIONS_COST = 0.002
 GPT4_PROMPT_COST = 0.03
 GPT4_COMPLETIONS_COST = 0.06
-ONE_TIME_EMBEDDING_CONVERSION_COST = 0.0001
-TEXT_BISON_COST = 0
-CLAUDE_COST = 0
-PINECONE_COST = 0
-WEAVIATE_COST = 0
-ADA_EMBEDDINGS_COST = 0
-GECKO_EMBEDDINGS_COST = 0
-CACHING_TIME_PERIOD_MONTHS = 3
-
-
 
 def num_tokens_from_string(string: str, encoding_name: str) -> int:
     """Returns the number of tokens in a text string."""
@@ -72,22 +62,7 @@ def main():
                 
                 
     elif choice == "Shaper":
-        
-        st.subheader("Shaper Approach Cost Calculation")
-        
-        average_tokens = st.slider("Average Tokens per Page", 0, 500, 1500)
-        number_of_pages = st.slider("Average Number Of Pages per Document", 0, 5, 3500000)
-        chunk_size = st.slider("Chunk Size", 0, 100, 1500)
-        total_number_of_tokens = average_tokens*number_of_pages
-        number_of_chunks = total_number_of_tokens/chunk_size
-        st.info("Number of Chunks: %d\n" % number_of_chunks)
-        total_number_of_embeddings = number_of_chunks
-        vector_db_choice = st.selectbox("Select a Vector DB", ["Pinecone", "Weaviate Cloud"])
-        
-        if vector_db_choice == "Pinecone":
-            embedding_cost_one_time = total_number_of_embeddings*ONE_TIME_EMBEDDING_CONVERSION_COST
-            
-            st.success("One Time Embedding Cost: $ %d\n" % embedding_cost_one_time)
+        st.subheader("Coming Soon...")
         
         
         
